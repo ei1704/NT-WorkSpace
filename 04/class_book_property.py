@@ -25,7 +25,7 @@ class Book:
       self.__discounts = val
 
     def price(self):
-      return int((self.__value - self.__value * (self.__discounts * 0.01)) * (1 + type(self).tax * 0.01))
+      return int((self.val - self.val * (self.discounts * 0.01)) * (1 + type(self).tax * 0.01))
 
 #main
 b1 = Book(1000)
